@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
-
+        
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
     }
